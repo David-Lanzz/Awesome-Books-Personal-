@@ -8,6 +8,7 @@ nav {
   width: 97%;
   background-color: aliceblue;
   z-index: 2;
+
   /* margin: 0 .5e; */
 }
 
@@ -37,6 +38,7 @@ nav a {
   justify-content: center;
   align-items: center;
   position: relative;
+
   /* padding: 10%; */
 }
 
@@ -45,9 +47,12 @@ nav a {
   right: 2em;
   top: 4em;
 }
-.container,.date {
+
+.container,
+.date {
   padding-top: 0;
 }
+
 .all-books {
   width: 100vw;
 
