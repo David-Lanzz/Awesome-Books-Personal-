@@ -21,7 +21,7 @@ export class BookObj {
         book.id = (i + 1).toString();
         const paragraph = document.createElement('p');
         const span1 = document.createElement('span');
-        span1.innerHTML = BookObj.bookObj[i].bookTitle;
+        span1.innerHTML = BookObj.bookObj[i].bookTitle + ' by ';
         const span2 = document.createElement('span');
         span2.innerHTML = BookObj.bookObj[i].arthur;
         paragraph.appendChild(span1);
