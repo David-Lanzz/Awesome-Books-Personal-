@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint max-classes-per-file: ["error",2] */
 import { bookList } from './variables.js';
 
 export class Books {
