@@ -1,11 +1,10 @@
 /* eslint-disable */
-
-import { bookList} from './variables.js';
+import { bookList } from './variables.js';
 
 export class Books {
   constructor(bookTitle, arthur, id) {
-    this.bookTitle = bookTitle,
-    this.arthur = arthur,
+    this.bookTitle = bookTitle;
+    this.arthur = arthur;
     this.id = id;
   }
 }
@@ -14,14 +13,14 @@ export class BookObj {
     static bookObj = [];
 
     static createList() {
-      for (let i = 0; i < BookObj.bookObj.length; i++) {
+      for (let i = 0; i < BookObj.bookObj.length; i += 1) {
         let listsbooks = '';
         BookObj.bookObj[i].id = (i + 1).toString();
         const book = document.createElement('li');
         book.id = (i + 1).toString();
         const paragraph = document.createElement('p');
         const span1 = document.createElement('span');
-        span1.innerHTML = BookObj.bookObj[i].bookTitle + ' by ';
+        span1.innerHTML = `${BookObj.bookObj[i].bookTitle} by `;
         const span2 = document.createElement('span');
         span2.innerHTML = BookObj.bookObj[i].arthur;
         paragraph.appendChild(span1);
@@ -38,8 +37,7 @@ export class BookObj {
 
     static removeBook(id) {
       let filteredArr = '';
-      filteredArr = BookObj.bookObj.filter((item) => item.id != id);
-      console.log(filteredArr);
+      filteredArr = BookObj.bookObj.filter((item) => item.id !== id);
       BookObj.bookObj = filteredArr;
       bookList.innerHTML = '';
       BookObj.createList();
