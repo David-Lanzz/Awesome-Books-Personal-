@@ -1,0 +1,10 @@
+export const bookList = document.querySelector('#bookList');
+export const addBtn = document.querySelector('#addBtn');
+export const title = document.querySelector('#title');
+export const arthur = document.querySelector('#arthur');
+export const addNewTab = document.querySelector('#addNew');
+export const listTab = document.querySelector('#list');
+export const contactTab = document.querySelector('#contact');
+export const header = document.querySelector('#header');
+export const time = document.querySelector('#current-time');
+export const outputArr = JSON.parse(localStorage.getItem('inputArr'));

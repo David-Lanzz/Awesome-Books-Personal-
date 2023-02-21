@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav  id="header">
+        <p class="nav-header"> Awesome Books </p>
+        <ul>
+            <li> <a id="listTab" href="#list" class="nav-item">List</a> </li>
+            <li> <a id="addNewTab" href="#addNew" class="nav-item">Add new</a> </li>
+            <li> <a id="contactTab" href="#contact" class="nav-item">Contact</a> </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="date">
+            <p id="current-time"></p>
+        </div>
+
+        <div class="all-books removeDisplay" id="list">
+            <h1>All Books</h1>
+            <ul id="bookList">
+              
+            </ul>
+        </div>
+         
+        <div class="add-book" id="addNew">
+            <h2>Add Book</h2>
+            <form action="">
+                <input type="text" name="Title" id="title" placeholder="Title" class="input-field">
+                <input type="text" name="Arthur" id="arthur" placeholder="Arthur" class="input-field">
+                <input type="button" value="Add" id="addBtn">
+            </form>
+        </div>
+
+        <div class="contact removeDisplay" id="contact">
+            <h3>Contact Us</h3>
+            <p>Do you have any follow up questions, recommendations or suggestion?</p>
+            <p>Reach us on:</p>
+            <ul>
+                <li>stephenkatuli88@gmail.com</li>
+                <li>lanzzd191@gmail.com</li>
+            </ul>
+        </div>
+        <footer>
+            copyright
+        </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
